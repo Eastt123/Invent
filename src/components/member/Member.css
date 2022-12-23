@@ -1,0 +1,34 @@
+.member{
+    margin-top: 105px;
+}
+.member h2, .member p{
+    padding: 10px 0;
+
+}
+.member img:first-child{
+    width: 100%;
+}
+.member-social{
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.member-social .member-line{
+    width: 5px;
+    background: var(--gradient-color);
+}
+
+
+@media screen and (max-width:834px) {
+    
+    .member{
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .member{
+        margin-top: 2rem;
+    }
+}

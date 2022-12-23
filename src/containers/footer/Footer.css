@@ -1,0 +1,135 @@
+.footer{
+    padding: 64px;
+    display: flex;
+    align-items: center;
+    gap: 2rem
+}
+.footer-links_logo{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex: .7;
+}
+.footer-links_logo-container{
+    display: flex;
+    gap: 1rem;
+}
+.footer-links_social{
+    display: flex;
+    gap: 1rem;
+    
+}
+.footer-links_div{
+    flex: 1;
+}
+
+ul {
+    position: relative;
+    list-style: none;
+    
+  }
+  
+ .footer li {
+    position: relative;
+    padding-left: 1em; 
+    text-indent: -.7em;
+    margin: 1rem;
+  }
+  
+ .footer li::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    left: -15px;
+    top: 5px;
+    background-color: yellow; 
+  }
+
+ .footer ul li p{
+    font-family: var(--font-family);
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.0025em;
+color: #000000;
+  }
+.footer-line{
+    width: 5px;
+    background:var(--gradient-color);
+  }
+.footer-links_div div:first-child{
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.footer div:last-child p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0025em;
+    
+    color: #000000;
+}
+
+.footer .footer-links_div:last-child{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 0.8
+
+}
+.footer-email{
+    flex: .5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.footer-email input{
+    height: 39px;
+    background: #C4C4C4;
+border-radius: 25px;
+border: none;
+padding-left: .5rem;
+}
+.footer-email button{
+    background: #FFE600;
+    width: 33px;
+height: 35px;
+position: absolute;
+left: 130px;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+}
+
+@media screen and (max-width:428px) {
+    .footer{
+        flex-direction: column;
+        align-items: unset;
+        padding: .5rem;
+    }
+
+    .footer div:last-child p {
+        margin: 1rem 0;
+    }
+}
+@media screen and (max-width:834px){
+.footer{
+    padding: 32px;
+    flex-wrap: wrap;
+}
+.footer-email{
+    display: none;
+}
+.footer-links_div{
+    flex: unset !important;
+}
+.footer div{
+    max-width: 330px;
+}
+}

@@ -1,0 +1,135 @@
+.about{
+    margin-top: 10rem;
+    display: flex;
+    padding: 64px;
+}
+
+.about-img{
+    
+    position: relative;
+    flex: 1;
+}
+.about-img img:last-child{
+position: absolute;
+left: 250px;
+bottom: -15%;
+}
+.about__text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 7rem;
+}
+.about__text-title{
+    display: flex;
+    align-items: center;
+}
+.about__text-title h4{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.0025em;
+    color: #000000;
+}
+.about__text-title .line{
+    width: 39px;
+    height: 5px;
+    margin: 0 24px;
+    background: var(--gradient-color);
+}
+.about__text h1{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 64px;
+letter-spacing: 0.0025em;
+color: #000000;
+}
+.about__text p{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.0025em;
+color: #000000;
+}
+.about__text-descr{
+    padding: 26px 16px 26px 64px;
+    display: flex;
+    gap: 1rem;
+}
+.about__text-descr .garident__color{
+    height: 100px;
+    width: 10px;
+    background: var(--gradient-color);
+}
+.about__text button{
+    padding: 10px 24px;
+gap: 10px;
+background: rgba(250, 255, 0, 0.64);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.0025em;
+color: #000000;
+text-transform: capitalize;
+border: none;
+cursor: pointer;
+}
+
+
+@media screen and (max-width:834px) {
+    .about{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .about-img{
+        display: flex;
+        gap: .5rem;
+        padding: 1.5rem;
+    }
+    .about-img img{
+        position: unset !important;
+        width: 50%;
+    }
+
+    .about__text{
+        padding-left: 2rem;
+        padding-right: 7rem;
+    }
+}
+
+@media screen and (max-width:434px) {
+    .about{
+        padding: .5rem;
+    }
+    .about-img{
+        margin-bottom: 10rem;
+    }
+    .about__text{
+        padding: 0;
+    }
+    .about-img img:last-child{
+        display: inline-block;
+        position: relative !important;
+        left: -55px !important;
+        bottom: -150px;
+        }
+        .about__text-descr{
+            padding: 16px 16px 16px 0px;
+        }
+        .about__text h1{
+            margin-bottom: 2.5rem;
+        }
+        .about__text p{
+            margin-bottom: 2.5rem;
+        }
+        .about__text .btn{
+            display: none;
+        }
+}

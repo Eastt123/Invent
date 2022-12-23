@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+:root{
+ --font-family: "Rubik", "sans-serif";
+ --color-bg: rgba(10, 5, 40, 0.75);
+ --gradient-color: linear-gradient(180deg, rgba(226,231,15,1) 51%, rgba(255,6,185,1) 75%);
+}

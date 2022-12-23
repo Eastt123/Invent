@@ -1,0 +1,63 @@
+.team{
+    margin-top: 15rem;
+    padding: 64px;
+}
+.team-line{
+    width: 67.5px;
+    height: .3rem;
+    background: var(--gradient-color);
+    margin: 0 auto 1rem auto;
+}
+
+.team-title div:first-child h4{
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.0025em;
+color: #000000;
+text-align: center;
+}
+.team-title h1{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 48px;
+line-height: 70px;
+letter-spacing: 0.0025em;
+text-align: center;
+color: #000000;
+}
+.team-members{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:834px) {
+.team{
+    padding: 32px;
+}
+.team-members{
+    flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width:428px) {
+    .team{
+        margin-top: 1rem;
+        padding: .5rem;
+    }
+    .team br{
+        display: none;
+    }
+    .team-title h1{
+        font-size: 41px;
+        line-height: 50px;
+    }
+    .team-members{
+        flex-direction: column;
+        padding: 0 .5rem;
+        gap: 0;
+    }
+}
